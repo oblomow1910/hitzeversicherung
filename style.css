@@ -1,0 +1,88 @@
+/* hitzeversicherung.de – Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root{
+  --paper:#ffffff;
+  --ink:#1c2830;
+  --ink-soft:#4a5a66;
+  --sky:#e6f0f8;
+  --sea:#245a86;
+  --sea-deep:#183f60;
+  --heat:#c4471c;
+  --rule:#d6e0e8;
+  --max:68ch;
+}
+*{box-sizing:border-box}
+html{font-size:17px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Source Sans 3',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  line-height:1.6;
+}
+h1,h2,h3{font-family:'Bitter',Georgia,'Times New Roman',serif;line-height:1.2;color:var(--ink);margin:0 0 .6em}
+h1{font-size:2.1rem;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.45rem;font-weight:700;margin-top:2.2em}
+h3{font-size:1.15rem;font-weight:600;margin-top:1.6em}
+p,ul,ol,table{margin:0 0 1.1em}
+a{color:var(--sea);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--sea-deep)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--heat);outline-offset:2px}
+
+/* layout */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+header.site{background:var(--sea-deep);color:#fff;padding:1rem 0}
+header.site .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+header.site a{color:#fff;text-decoration:none}
+header.site .brand{font-family:'Bitter',serif;font-weight:700;font-size:1.2rem}
+header.site nav a{margin-left:1.2rem;font-size:.95rem;border-bottom:1px solid transparent}
+header.site nav a:hover{border-bottom-color:#fff}
+main{padding:2.5rem 0 3rem}
+footer.site{border-top:1px solid var(--rule);padding:1.5rem 0 2.5rem;color:var(--ink-soft);font-size:.9rem}
+footer.site a{color:var(--ink-soft);margin-right:1.2rem}
+
+/* hero on start page */
+.lead{font-size:1.25rem;color:var(--ink-soft);margin-bottom:1.6rem}
+.antwort{
+  border-left:6px solid var(--heat);background:var(--sky);
+  padding:1rem 1.25rem;margin:1.8rem 0 2.2rem;
+}
+.antwort p{margin:0}
+.antwort strong{font-family:'Bitter',serif}
+
+/* the payer table – the one memorable element */
+table.zahlt{width:100%;border-collapse:collapse;font-size:.97rem}
+table.zahlt th,table.zahlt td{text-align:left;padding:.7rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+table.zahlt th{font-family:'Bitter',serif;font-weight:600;background:var(--sky)}
+table.zahlt td:first-child{font-weight:600;width:38%}
+.ja{color:#1d6b3a;font-weight:600}
+.nein{color:var(--heat);font-weight:600}
+.teils{color:#8a5a00;font-weight:600}
+.scroll{overflow-x:auto}
+
+/* affiliate boxes */
+.partner{
+  border:1px solid var(--rule);border-top:4px solid var(--sea);
+  padding:1.1rem 1.25rem;margin:2rem 0;
+}
+.partner .hinweis{font-size:.8rem;color:var(--ink-soft);margin:0 0 .5rem}
+.partner h3{margin-top:0}
+.partner p:last-child{margin-bottom:0}
+.btn{
+  display:inline-block;background:var(--sea);color:#fff;text-decoration:none;
+  padding:.65rem 1.1rem;font-weight:600;border-radius:3px;margin-top:.4rem;
+}
+.btn:hover{background:var(--sea-deep);color:#fff}
+
+/* article list */
+.artikel{list-style:none;padding:0}
+.artikel li{padding:1rem 0;border-bottom:1px solid var(--rule)}
+.artikel li a{font-family:'Bitter',serif;font-weight:600;font-size:1.1rem;text-decoration:none}
+.artikel li p{margin:.3rem 0 0;color:var(--ink-soft)}
+.meta{color:var(--ink-soft);font-size:.9rem;margin-bottom:1.8rem}
+
+@media (max-width:600px){
+  html{font-size:16px}
+  h1{font-size:1.7rem}
+  header.site nav a{margin-left:0;margin-right:1rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

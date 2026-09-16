@@ -1,0 +1,30 @@
+hitzeversicherung.de – Website-Paket
+=====================================
+
+Dateien
+-------
+index.html                                  Startseite
+ratgeber/welche-versicherung-zahlt-bei-hitze.html
+ratgeber/elementarschadenversicherung.html
+ratgeber/hitzeschutz-zuhause.html
+impressum.html                              PFLICHT – Platzhalter [..] ausfüllen!
+datenschutz.html                            PFLICHT – Platzhalter [..] ausfüllen!
+style.css
+
+Vor dem Hochladen
+-----------------
+1. impressum.html und datenschutz.html öffnen, alle [PLATZHALTER] ersetzen.
+2. Affiliate-Links: In allen HTML-Dateien nach "AFFILIATE_LINK_" suchen und
+   durch deine echten Partnerlinks ersetzen:
+     AFFILIATE_LINK_WOHNGEBAEUDE      -> financeads/Awin-Link zum Wohngebäude-Vergleich
+     AFFILIATE_LINK_HAUSRAT           -> financeads/Awin-Link zum Hausrat-Vergleich
+     AFFILIATE_LINK_VENTILATOR        -> Amazon-PartnerNet-Link (Produkt oder Suche)
+     AFFILIATE_LINK_SONNENSCHUTZFOLIE -> Amazon-PartnerNet-Link
+   Solange du noch keine Links hast: Boxen drinlassen, aber href auf "#" setzen,
+   oder die <aside class="partner">…</aside>-Blöcke vorübergehend löschen.
+
+Hochladen
+---------
+Alle Dateien und den Ordner "ratgeber" in das Web-Root-Verzeichnis deines
+Hostings laden (meist "httpdocs", "public_html" oder "www"). Ordnerstruktur
+beibehalten. Fertig – kein PHP, keine Datenbank nötig.
